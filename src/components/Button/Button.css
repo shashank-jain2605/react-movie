@@ -1,0 +1,35 @@
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.button-container button {
+  font-size: 3rem;
+  padding: 1.5rem 2rem;
+  outline: none;
+  border: none;
+  width: 25%;
+  color: var(--clr-white);
+  background: var(--clr-black);
+  cursor: pointer;
+  border-radius: 4rem;
+  box-shadow: var(--dark-shadow);
+  transition: var(--transition);
+}
+
+.button-container button :hover {
+  filter: brightness(120%);
+  box-shadow: var(--light-shadow);
+}
+
+/*media queries*/
+@media screen and (max-width: 1000px) {
+  .button-container button {
+    font-size: 2rem;
+    padding: 1.5rem 1.25rem;
+    width: 40%;
+  }
+}
